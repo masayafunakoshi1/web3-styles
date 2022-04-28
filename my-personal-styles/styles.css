@@ -1,0 +1,63 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-family: 'Inter', sans-serif;
+    color: rgb(242, 253, 255);
+}
+
+.text-glow{
+    text-shadow: 0 0 50px rgba(222, 236, 255, 0.75), 0 0 20px rgb(65 120 255 / 24%);
+}
+
+.text-gradient{
+    background: -webkit-linear-gradient(left,#dca8ff 20%, #7bcfff 40%, #756bfa 80%);
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-animation{
+    background-size: 200% 200%;
+    animation: gradient-animation 3s ease infinite;
+}
+
+
+
+
+/* KeyFrames for animation*/
+@-webkit-keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @-moz-keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
